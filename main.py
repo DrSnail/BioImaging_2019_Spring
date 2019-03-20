@@ -2,6 +2,7 @@
 import numpy as np
 import cv2
 
+#Тест
 def draw(event, x, y, flags, param):
     r = 25
     if event == cv2.EVENT_LBUTTONDBLCLK:
