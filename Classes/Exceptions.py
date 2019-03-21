@@ -5,3 +5,7 @@ class ImageError(Exception):
 class ImageIsNotPresented(ImageError):
     def __str__(self):
         return "Image have to be specifed before using"
+
+class GrayImage(ImageError):
+    def __str__(self):
+        return "Gray Image Error"
