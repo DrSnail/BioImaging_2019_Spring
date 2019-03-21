@@ -4,8 +4,12 @@ class ImageError(Exception):
 
 class ImageIsNotPresented(ImageError):
     def __str__(self):
-        return "Image have to be specifed before using"
+        return "Image has to be specifed before using"
 
-class GrayImage(ImageError):
+class GrayImageError(ImageError):
     def __str__(self):
         return "Gray Image Error"
+
+class GrayIncorrectCreatingError(GrayImageError):
+    def __str__(self):
+        return "Class Gray has to be created via method _convert_to_gray of class Image"
